@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFunc(element) {
+            return [...element.querySelectorAll("*"), element];
+        }
+        window.onload = function () {
+            console.log(myFunc(document.getElementById("bottomMenu")));
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Sample page</h1>
+    <div id="row">
+        <div id="col1">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, id? Laboriosam ipsam blanditiis, cumque quam dicta sequi veniam nobis illo temporibus ullam rerum, voluptas, iure quia eveniet fugiat ratione libero!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magnam possimus repudiandae maxime. Blanditiis debitis nulla iusto tempora dolorum id voluptatem maxime. Aliquid dolorem, obcaecati praesentium fuga voluptatibus eligendi voluptate.</p>
+        </div>
+        <div id="col2">
+            <h2>Section 1</h2>
+            <p><a href="#">Lorem dolor</a> sit amet consectetur adipisicing elit. Veniam, id? Laboriosam ipsam blanditiis, cumque quam dicta sequi veniam nobis illo temporibus ullam rerum, voluptas, iure quia eveniet fugiat ratione libero!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magnam possimus repudiandae maxime. Blanditiis debitis nulla iusto tempora dolorum id voluptatem maxime. Aliquid dolorem, obcaecati praesentium fuga voluptatibus eligendi voluptate.</p>
+        </div>
+    </div>
+    <footer>
+        <ul id="bottomMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
